@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  h1 #{title}
+  br
+
+  form(action="/completetask", method="post")
+    table.table.table-striped.table-bordered
+      tr
+        td Origin date
+        td Origin
+        td Seller
+        td Destination
+        td Destination date
+        td Buyer
+        td Charterer
+        td Cargo
+        td Product
+      if (typeof tasks === "undefined")
+        tr
+          td
+      else
+        each task in tasks
+          tr
+            td #{task.name}
+            td #{task.category}
+            - var date  = new Date(task.date);
+            - var day   = date.getDate();
+            - var month = date.getMonth() + 1;
+            - var year  = date.getFullYear();
+            td #{month + "/" + day + "/" + year}
+            td
+              input(type="checkbox", name="#{task.id}", value="#{!task.completed}", checked=task.completed)
+    button.btn(type="submit") Update trades
+  hr
+  form.well(action="/addtask", method="post")
+    label Vessel:
+    input(name="name", type="textbox")
+    label Origin date:
+    input(name="category", type="textbox")
+    br
+    button.btn(type="submit") Add trade

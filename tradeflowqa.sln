@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "tradeflowqa", "tradeflowqa\tradeflowqa.njsproj", "{87DD3C2B-636C-40D1-AAA0-42750CA804A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0D3CDF1B-4B80-4ED7-A725-680F79CAB033}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87DD3C2B-636C-40D1-AAA0-42750CA804A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87DD3C2B-636C-40D1-AAA0-42750CA804A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87DD3C2B-636C-40D1-AAA0-42750CA804A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87DD3C2B-636C-40D1-AAA0-42750CA804A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F29A244-D952-493E-A8EB-E451C0FF96C9}
+	EndGlobalSection
+EndGlobal
