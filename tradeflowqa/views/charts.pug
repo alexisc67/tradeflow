@@ -1,0 +1,12 @@
+﻿extends layout
+
+block append content
+  h1 #{title}
+  br  
+  
+  h2 Charts
+
+  script(src='//d3js.org/d3.v3.min.js')
+  script(src='https://d3js.org/d3-dsv.v1.min.js')
+  script(src='https://d3js.org/d3-fetch.v1.min.js')
+  script(src='/js/charts.js')

@@ -31,18 +31,38 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="public\js\charts.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="public\js\grid.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="config.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="controllers\index.js" />
     <Compile Include="controllers\tasklist.js" />
+    <Compile Include="controllers\trade.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="controllers\users.js" />
     <Compile Include="controllers\dao.js" />
     <None Include="tradeflowqa - Web Deploy.pubxml" />
     <None Include="tradeflowqa - FTP.pubxml" />
+    <Content Include="public\assets\equinor_logo_black.jpg" />
+    <Content Include="public\assets\equinor_logo_red.jpg" />
+    <Content Include="public\assets\equinor_logo_red.png" />
+    <Content Include="public\css\charts.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\css\style.css" />
     <Content Include="views\error.pug" />
     <Content Include="views\index.pug" />
     <Content Include="views\layout.pug" />
+    <Content Include="views\charts.pug" />
+    <Content Include="views\trade.pug">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config" />
     <Content Include="package.json" />
@@ -50,6 +70,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="controllers\" />
+    <Folder Include="visual\" />
+    <Folder Include="public\" />
+    <Folder Include="public\assets\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\css\" />
     <Folder Include="views\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->

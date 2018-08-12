@@ -2,12 +2,32 @@ doctype html
 html
   head
     title= title
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.1/jsgrid.min.css', rel='stylesheet') 
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.1/jsgrid-theme.min.css', rel='stylesheet') 
     link(rel='stylesheet', href='//ajax.aspnetcdn.com/ajax/bootstrap/3.3.2/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.44/css/bootstrap-datetimepicker.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/charts.css')
+
   body
-    nav.navbar.navbar-inverse.navbar-fixed-top
+    nav.navbar.navbar-fixed-top.navbar-light
       div.navbar-header
-        a.navbar-brand(href='#') Trades
+        a.navbar-brand(href='#') LPG Trade Flow Tracker
+      ul.nav.navbar-nav
+        li.nav-item.active
+          a.nav-link Dashboard
+        li.nav-item
+          a.nav-link My Fleet
+        li.nav-item
+          a.nav-link My Profile
+      ul.nav.navbar-nav.navbar-right
+        li
+          img(src='/assets/equinor_logo_red.png', alt='Equinor')
     block content
     script(src='//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.min.js')
     script(src='//ajax.aspnetcdn.com/ajax/bootstrap/3.3.2/bootstrap.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.1/jsgrid.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.44/js/bootstrap-datetimepicker.min.js')
+    script(src='https://cdn.metroui.org.ua/v4/js/metro.min.js')
+    script(src='/js/grid.js')

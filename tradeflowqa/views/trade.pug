@@ -1,14 +1,22 @@
-extends layout
+﻿extends layout
 
-block content
-  h2 Trades
+block append content
+  h1 #{title}
+  br  
+  
+  h2 Vessel Details  
   div#jsGrid
+
   hr
-  h2 Kpler Reference Trades
+  form(action="/", method="get")
+    button.btn(type="submit") Cancel
+    button.btn(type="submit") Save
+  hr
+  h2 Reference Trades from Kpler
   div.box
-    form(action="/showTrades", method="post")
-      table.table.table-striped.table-bordered
-        tr
+    form(action="/useThis", method="get")
+      table.table.table-striped.table-bordered.table-hover.table-condensed
+        tr.thick
           td Vessel
           td Origin date
           td Origin
@@ -36,10 +44,7 @@ block content
               td #{trade.value}
               td #{trade.product_name}
               td
-                input(type="checkbox", name="#{trade.id}", value="#{!trade.completed}", checked=trade.completed)
-              td
-                button.btn(type="submit") Edit
-    //button.btn(type="submit") Update Trades
+                button.btn(type="submit") Use this
   hr
-  h2 Vessel History: Clipper Quito
+  h2 Vessel History
   div.box
