@@ -19,11 +19,11 @@ block content
           td Charterer
           td Cargo
           td Product
-        if (typeof tradesList === "undefined")
+        if (typeof tradesModel === "undefined")
           tr
             td
         else
-          each trade in tradesList
+          each trade in tradesModel
             tr
               td #{trade.vessel_id}
               td #{trade.origin_date}

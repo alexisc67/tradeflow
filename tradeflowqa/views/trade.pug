@@ -2,9 +2,9 @@
 
 block append content
   h1 #{title}
-  br  
-  
-  h2 Vessel Details  
+  br
+
+  h2 Vessel Details
   div#jsGrid
 
   hr
@@ -27,11 +27,11 @@ block append content
           td Charterer
           td Cargo
           td Product
-        if (typeof tradesList === "undefined")
+        if (typeof tradesModel === "undefined")
           tr
             td
         else
-          each trade in tradesList
+          each trade in tradesModel
             tr
               td #{trade.vessel_id}
               td #{trade.origin_date}

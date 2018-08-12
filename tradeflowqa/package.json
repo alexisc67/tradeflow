@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "tradeflowqa",
   "scripts": {
-    "start": "node app"
+    "start": "node app",
+    "nn": "node_modules/.bin/nodemon app"
   },
   "engines": {
     "node": "~6.10.x"
@@ -17,6 +18,7 @@
     "d3": "^5.5.0",
     "d3-fetch": "^1.1.0",
     "d3-node": "^2.0.1",
+    "dotenv": "^6.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "express-validator": "^5.3.0",
